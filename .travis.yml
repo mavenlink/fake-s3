@@ -26,4 +26,5 @@ rvm:
 matrix:
   allow_failures:
     - rvm: 1.9
+    - rvm: 2.0
     - rvm: ruby-head
