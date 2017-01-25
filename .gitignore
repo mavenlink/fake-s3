@@ -6,6 +6,7 @@ test_root
 
 # Don't check in RVM/rbenv files
 .ruby-version
+.ruby-gemset
 
 # RubyMine
 .idea
