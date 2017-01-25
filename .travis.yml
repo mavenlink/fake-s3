@@ -1,5 +1,13 @@
+language: ruby
+sudo: false
+email: false
+cache:
+  directories:
+    - ../bundle
+bundler_args: "--binstubs --standalone --without documentation --path ../bundle"
 before_script:
   - bundle exec rake test_server
+script: "bundle exec rake test"
 rvm:
   - 1.9
   - 2.0
