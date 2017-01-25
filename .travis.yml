@@ -12,7 +12,7 @@ before_install:
   - "sudo apt-get install s3cmd"
 bundler_args: "--standalone --without documentation --path ../bundle"
 before_script:
-  - "bundle exec rake test_server &> /tmp/fakes3_test_server.log"
+  - "bundle exec rake test_server &> /tmp/fakes3_test_server.log&"
   - "TEST_SERVER_PID=$!"
 script: "bundle exec rake test"
 after_script:
